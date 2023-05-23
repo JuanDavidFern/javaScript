@@ -16,4 +16,4 @@ const numeros2 = [9, 10]
 //... Los tres puntos simbolizan el spread con ellos creamos un array concatenando varios          
 const todosLosNumeros = [...numeros, ...numeros2]
 
-console.log(todosLosNumeros) // [1, 2, 3, 4, 5]
+console.log(todosLosNumeros); // [1, 2, 3, 4, 5]
