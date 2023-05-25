@@ -18,14 +18,10 @@ console.log(stringsWithA)
 //La función .map sirve para hacer modificaciones
 //sobre algun elemento del array
 const numerillos = [1, 2, 3, 'hola']
+//Operador ternario
+const doubleNumbers = numerillos.map(numerillos => typeof numerillos === 'number' ? numerillos * 2 : numerillos)
 
-const doubleNumbers = numerillos.map(numerillos => {
-    if(typeof numerillos === 'number')
-    return numerillos * 2
-    return numerillos
-})
-
-console.log(doubleNumbers) // [2, 4, 6]
+console.log(doubleNumbers)
 
 const palabritas = ['hola', 'javascript', 'midu', 'programación']
 
