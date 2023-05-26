@@ -36,14 +36,7 @@ function modifyText() {
 
   //document.addEventListener("DOMContentLoaded", cargar, false);
 
-  const hacerArray = () => {
-    let tamanio = eval(prompt('Longitud del array'))
-    let array = []
-    for (let index = 0; index < tamanio; index++) {
-     array[index] = Math.floor(Math.random() * 10 + 1) 
-  }
-  return array
-  }
+  
 
   function cargarArray() {
     let el = document.getElementById("t1");
@@ -54,7 +47,15 @@ function modifyText() {
     let t1 = document.getElementById("t2");
     t1.firstChild.nodeValue = hacerArray()
   }
-  
+
+  const hacerArray = () => {
+    let tamanio = eval(prompt('Longitud del array'))
+    let array = []
+    for (let index = 0; index < tamanio; index++) {
+     array[index] = Math.floor(Math.random() * 10 + 1) 
+  }
+  return array
+  }
 
   document.addEventListener("DOMContentLoaded", cargarArray, false);
 

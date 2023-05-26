@@ -5,11 +5,16 @@
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Muli';
   display: flex;
+  /*align-items alinea las cosas en el eje Y*/
   align-items: center;
+  /*justify-content alinea las cosas en el eje X*/
   justify-content: center;
   height: 100vh;
+  /* oculta cualquier contenido que se desborda más allá de los límites del elemento,
+   recortándolo y no permitiendo su visualización ni el uso de barras de desplazamiento para acceder a ese contenido adicional.
+   overflow: scroll por ejemplo muestra siempre las barras de scroll*/
   overflow: hidden;
   margin: 0;
 }
@@ -17,6 +22,7 @@ body {
 .container {
   display: flex;
   width: 90vw;
+  /*flex-direction: row-reverse cpondria los objetos en la row en la direccion contraria a la que esta escrita*/
 }
 
 .panel {
