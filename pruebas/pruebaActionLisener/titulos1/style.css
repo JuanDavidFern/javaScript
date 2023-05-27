@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    /*se usa para ajustar el tamaño de una imagen de fondo
+    *En este caso sin background cover las fotos se verian repetidas asi solo se ve una*/
+    background-size: cover;
+    -webkit-transition: all 1000ms ease-in;
+}
+
+body.a{
+    background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+
+body.b{
+    background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')
+}
+
+body.c{
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80')
+}
+
+.contenedor{
+    width: 90vw;
+    display: flex;
+    justify-content : space-around;
+    flex-direction: row;
+    
+}
+
+.texto{
+    font-size: 20px;
+    -webkit-transition: all 1000ms ease-in;
+    
+}
+
+.texto.inactivo{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.texto.inactivo p{
+    font-size: 5px;
+    
+}
+
+.texto.activo{
+    font-size: 40px;
+}
+
+.texto.activo h2{
+    color: blue;
+    font-size: 60px;
+}
+

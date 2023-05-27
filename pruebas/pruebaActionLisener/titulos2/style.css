@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    -webkit-transition: all 500ms ease-in;
+}
+
+.contenedor{
+    width: 90vw;
+    display: flex;
+    justify-content : space-around;
+    flex-direction: row;
+    
+}
+
+.texto{
+    font-size: 20px;
+    -webkit-transition: all 1000ms ease-in;
+    
+}
+
+.texto.inactivo{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.texto.inactivo p{
+    font-size: 5px;
+    
+}
+
+.texto.activo{
+    font-size: 40px;
+}
+
+.texto.activo h2{
+    color: blue;
+    font-size: 60px;
+}
