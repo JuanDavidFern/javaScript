@@ -2,7 +2,7 @@
 const personas = [
     {nombre : 'juan' , profesion : 'barrendero'},
     {nombre : 'luis' , profesion : 'carpintero'},
-    {nombre : 'maria' , profesion : 'bombero xD'},
+    {nombre : 'maria' , profesion : 'bombero'},
     {nombre : 'alba' },
 ]
 
