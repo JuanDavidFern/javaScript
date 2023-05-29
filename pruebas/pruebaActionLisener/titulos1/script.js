@@ -12,7 +12,6 @@ const cargar = () => {
         texto.addEventListener('click', () => {
             eliminar()
             body.classList.replace(body.className, texto.id)
-            body.id = body.className
             texto.classList.remove('inactivo')
             texto.classList.add('activo')
         })

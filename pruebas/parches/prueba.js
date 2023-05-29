@@ -67,16 +67,11 @@ const maximoMinimo = array =>{
 
 console.log(maximoMinimo(arraysito))
 
-const otraForma = (array, verdadero) => array.flatMap((array, index) =>{
-    if (array === Math.max(...verdadero)) {
-        return index
-    }else if(array === Math.min(...verdadero)){
-        return index
-    }else
-        return []
-})
+const otraForma = array => {
+    return [array.indexOf(Math.min(...array)), array.indexOf(Math.max(...array))]
+}
 
-console.log(otraForma(arraysito, arraysito))
+console.log(otraForma(arraysito))
 
 
 const hacerArray = () => {

@@ -81,7 +81,7 @@ const matrix = [
   let stringABuscar = 'JavaScript'
   
   //Arrow function
-  const position = matrix =>{
+  const position = matrix => {
     let array = [-1, -1]
     matrix.forEach((row, index) => {
       row.forEach((col, indexRow) => {

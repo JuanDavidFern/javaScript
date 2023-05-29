@@ -6,7 +6,7 @@ const letters = '0123456789ABCDEF';
 
 const colorAleatorio = () => {
     let color = '#';
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 8; i++) {
       color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
@@ -22,7 +22,7 @@ const eliminar = () => {
 
 const cargar = () => {
     textos.forEach(texto => {
-        texto.addEventListener('click', () => {
+        texto.addEventListener("mousemove", () => {
             eliminar()
             texto.classList.remove('inactivo')
             texto.classList.add('activo')
@@ -34,5 +34,3 @@ const cargar = () => {
 }
 
 document.addEventListener('DOMContentLoaded', cargar(), false)
-
-
