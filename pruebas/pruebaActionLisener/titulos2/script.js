@@ -1,5 +1,5 @@
 const textos = document.querySelectorAll('.texto')
-const body = document.querySelector('body')
+const body = document.body
 const letters = '0123456789ABCDEF';
 
 
@@ -26,7 +26,7 @@ const cargar = () => {
             eliminar()
             texto.classList.remove('inactivo')
             texto.classList.add('activo')
-            document.body.style.backgroundColor = color
+            body.style.backgroundColor = color
             color = colorAleatorio()
         })
     })

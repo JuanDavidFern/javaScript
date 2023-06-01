@@ -1,5 +1,5 @@
 const textos = document.querySelectorAll('.texto')
-const body = document.querySelector('body')
+const body = document.body
 
 const eliminar = () => {
     textos.forEach(texto => {

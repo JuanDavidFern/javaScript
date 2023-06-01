@@ -8,19 +8,23 @@ const botonForm = document.getElementById('botonFormulario')
 document.querySelector('form').addEventListener('submit', e => {
     e.preventDefault()
     const data = Object.fromEntries(new FormData(e.target))
-    alert('Su nombre es: ' + data.user_name + 
+    if (verificarCorreoElectronico(data.user_mail)) {
+        alert('Su nombre es: ' + data.user_name + 
             '\nSu correo es: ' + data.user_mail + 
             '\nMensaje: ' + data.user_message)
+    } else {
+        alert('El correro: ' + data.user_mail + ' no cumple con el formato' + 
+                '\nUse el siguiente formato: usuario@example.com')
+        currentActive--
+        botonForm.disabled = true
+        update()
+    }
 })
 
 let currentActive = 1
 
 next.addEventListener('click', () => {
     currentActive++
-
-    if(currentActive > circles.length) {
-        currentActive = circles.length
-    }
 
     update()
 })
@@ -30,12 +34,13 @@ prev.addEventListener('click', () => {
 
     botonForm.disabled = true
 
-    if(currentActive < 1) {
-        currentActive = 1
-    }
-
     update()
 })
+
+function verificarCorreoElectronico(correo) {
+    var patron = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return patron.test(correo);
+  }
 
 function update() {
     circles.forEach((circle, idx) => { idx < currentActive ? circle.classList.add('active') : circle.classList.remove('active')})
